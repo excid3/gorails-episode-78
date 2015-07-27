@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   resources :posts
-  resources :users
+  resources :users, param: :username
   root to: "posts#index"
 end
